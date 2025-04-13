@@ -1,0 +1,46 @@
+{{define "admin_panel"}}
+    <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+            <li title="{{lang "Fixed the sidebar"}}">
+                <a href="javascript:void(0);" class="fixed-btn" data-click="false">
+                    <i class="fa fa-thumb-tack"></i>
+                </a>
+            </li>
+
+            <li title="{{lang "Enter fullscreen"}}" class="fullpage-btn">
+                <a href="javascript:void(0);">
+                    <i class="fa fa-arrows-alt"></i>
+                </a>
+            </li>
+            <li title="{{lang "Exit fullscreen"}}" class="exit-fullpage-btn" style="display: none;">
+                <a href="javascript:void(0);">
+                    <i class="fa fa-compress"></i>
+                </a>
+            </li>
+            <li title="{{lang "Refresh"}}">
+                <a href="javascript:void(0);" class="container-refresh">
+                    <i class="fa fa-refresh"></i>
+                </a>
+            </li>
+            {{if not .User.HideUserCenterEntrance}}
+                <li class="dropdown user user-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        {{if eq .User.Avatar ""}}
+                            <img src="{{.UrlPrefix}}/assets/dist/img/avatar04.png" class="user-image" alt="User Image">
+                        {{else}}
+                            <img src="{{.User.Avatar}}" class="user-image" alt="User Image">
+                        {{end}}
+                        <span class="hidden-xs">{{.User.Name}}</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        {{.NavButtonsHTML}}
+                        <li><a href="{{.UrlPrefix}}/info/normal_manager/edit?__goadmin_edit_pk={{.User.Id}}" class="dropdown-item"><i class="fa fa-edit"></i>
+                            <span>{{lang "setting"}}</span></a></li>
+                        <li><a href="{{.UrlPrefix}}/logout" class="no-pjax dropdown-item"><i class="fa fa-sign-out"></i>
+                            <span>{{lang "sign out"}}</span></a></li>
+                    </ul>
+                </li>
+            {{end}}
+        </ul>
+    </div>
+{{end}}

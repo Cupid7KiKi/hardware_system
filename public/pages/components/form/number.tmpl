@@ -1,0 +1,21 @@
+{{define "form_number"}}
+    {{if .Editable}}
+        <div class="input-group">
+            <input {{if .Must}}required="1"{{end}} style="width: 100px; text-align: center;" type="number"
+                   name="{{.Field}}"
+                   value="0" class="form-control {{.Field}}" min="0"
+                   placeholder="{{.Head}}">
+        </div>
+        <script>
+            $(function () {
+                $('.{{.Field}}:not(.initialized)')
+                    .addClass('initialized')
+            });
+        </script>
+    {{else}}
+        <div class="box box-solid box-default no-margin">
+            <div class="box-body">{{.Value}}</div>
+        </div>
+        <input type="hidden" class="{{.Field}}" name="{{.Field}}" value='{{.Value}}'>
+    {{end}}
+{{end}}

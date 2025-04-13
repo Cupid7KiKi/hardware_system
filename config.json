@@ -1,0 +1,54 @@
+{
+	"database": {
+		"default": {
+			"host": "127.0.0.1",
+			"port": "3306",
+			"user": "root",
+			"pwd": "YJY020908",
+			"name": "go-admin",
+			"driver": "mysql",
+			"max_idle_con": 5,
+			"max_open_con": 10,
+			"conn_max_life_time": 3600000000000
+		}
+	},
+	"app_id": "ltmuRbAGf0Gy",
+	"language": "cn",
+	"prefix": "ks",
+	"theme": "sword",
+	"asset_root_path": "D:\\Go_WorkPlace\\src\\hardware_system\\public\\",
+	"store": {
+		"path": "./uploads",
+		"prefix": "uploads"
+	},
+	"title": "五金实业管理系统",
+	"logo": "Ks",
+	"mini_logo": "KS",
+	"index": "/",
+	"login_url": "/login",
+	"debug": true,
+	"env": "local",
+	"info_log": "D:/Go_WorkPlace/src/hadware_system/logs/info.log",
+	"error_log": "D:/Go_WorkPlace/src/hadware_system/logs/error.log",
+	"access_log": "D:/Go_WorkPlace/src/hadware_system/logs/access.log",
+	"session_life_time": 7200,
+	"file_upload_engine": {
+		"name": "local"
+	},
+	"login_title": "GoAdmin",
+	"login_logo": "Ks",
+	"auth_user_table": "goadmin_users",
+	"bootstrap_file_path": "D:/Go_WorkPlace/src/hadware_system/bootstrap.go",
+	"go_mod_file_path": "D:/Go_WorkPlace/src/hadware_system/go.mod",
+	"url_format": {
+		"info": "/info/:__prefix",
+		"detail": "/info/:__prefix/detail",
+		"create": "/new/:__prefix",
+		"delete": "/delete/:__prefix",
+		"export": "/export/:__prefix",
+		"edit": "/edit/:__prefix",
+		"show_edit": "/info/:__prefix/edit",
+		"show_create": "/info/:__prefix/new",
+		"update": "/update/:__prefix"
+	}
+}

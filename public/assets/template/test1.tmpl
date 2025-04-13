@@ -1,0 +1,15 @@
+<a href="https://www.baidu.com/" class="test">{{index . "msg"}}</a>
+<p id="demo">123</p>
+<button type="button" onclick="displayDate()">显示日期</button>
+
+<style>
+    .test{
+        background-color: #0d6aad;
+    }
+</style>
+
+<script>
+    function displayDate(){
+        document.getElementById("demo").innerHTML=Date();
+    }
+</script>

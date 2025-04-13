@@ -1,0 +1,263 @@
+2025-03-08T18:53:02.159+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T18:53:02.183+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T18:53:02.835+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T18:53:02.836+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T18:53:02.836+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T18:55:58.408+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T18:55:58.426+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T18:55:58.428+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T18:55:58.429+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T18:55:58.430+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T18:58:03.674+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T18:58:03.694+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T18:58:03.695+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T18:58:03.696+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T18:58:03.696+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T18:58:11.612+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414314916120001", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T18:58:11.736+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414314916360003", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.js"}
+2025-03-08T18:58:11.736+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414314916360002", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.css"}
+2025-03-08T18:58:20.814+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315006880004", "statuscode": "200", "method": "POST", "path": "/ks/signin"}
+2025-03-08T18:58:20.860+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315008600005", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/js/all.min.506636f003.js"}
+2025-03-08T18:58:20.864+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315008640007", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/img/avatar04.png"}
+2025-03-08T18:58:20.864+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315008620006", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/css/all.min.dd4b069ab5.css"}
+2025-03-08T18:58:20.867+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315008670009", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/js/datatable.min.43c12443cf.js"}
+2025-03-08T18:58:20.868+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315008640008", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/js/form.min.4022a41f70.js"}
+2025-03-08T18:58:20.887+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315008870010", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/js/tree.min.b68a8b6689.js"}
+2025-03-08T18:58:20.893+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315008930011", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/js/treeview.min.3095cd8c12.js"}
+2025-03-08T18:58:20.893+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315008930013", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/js/all_2.min.1cd3070239.js"}
+2025-03-08T18:58:20.895+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315008930012", "statuscode": "200", "method": "GET", "path": "/ks/assets/chart.min.js"}
+2025-03-08T18:58:20.935+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315009350014", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/fonts/fontawesome-webfont.woff2"}
+2025-03-08T18:58:20.999+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315009990015", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/css/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf"}
+2025-03-08T18:58:21.024+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315010230016", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/css/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf"}
+2025-03-08T18:58:37.808+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315177920017", "statuscode": "200", "method": "GET", "path": "/ks/info/manager"}
+2025-03-08T18:58:37.833+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414315178330018", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/css/blue@2x.png"}
+2025-03-08T19:04:45.859+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414318858590019", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/css/blue.png"}
+2025-03-08T19:05:14.803+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414319147920020", "statuscode": "200", "method": "GET", "path": "/ks/info/manager"}
+2025-03-08T19:06:18.451+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414319784260021", "statuscode": "200", "method": "GET", "path": "/ks/info/generate/new"}
+2025-03-08T19:06:20.892+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414319808850022", "statuscode": "200", "method": "POST", "path": "/ks/operation/_tool_choose_conn"}
+2025-03-08T19:09:10.956+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414321509310023", "statuscode": "200", "method": "GET", "path": "/ks/info/generate/new"}
+2025-03-08T19:09:12.220+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414321522160024", "statuscode": "200", "method": "POST", "path": "/ks/operation/_tool_choose_conn"}
+2025-03-08T19:09:13.926+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414321539220025", "statuscode": "200", "method": "POST", "path": "/ks/operation/_tool_choose_table"}
+2025-03-08T19:11:30.512+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00934417414322904760026", "statuscode": "200", "method": "POST", "path": "/ks/new/generate"}
+2025-03-08T19:13:46.958+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T19:13:46.978+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T19:13:46.979+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T19:13:46.980+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T19:13:46.980+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T19:13:53.871+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00266017414324338420001", "statuscode": "200", "method": "GET", "path": "/ks/info/generate/new"}
+2025-03-08T19:13:54.801+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00266017414324347760002", "statuscode": "200", "method": "GET", "path": "/ks/info/generate/new"}
+2025-03-08T19:13:55.489+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00266017414324354650003", "statuscode": "200", "method": "GET", "path": "/ks/info/generate/new"}
+2025-03-08T19:15:12.445+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T19:15:12.463+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T19:15:12.464+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T19:15:12.465+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T19:15:12.465+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T19:17:10.649+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T19:17:10.668+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T19:17:10.670+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T19:17:10.670+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T19:17:10.671+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T19:19:46.208+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01858417414327861980001", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:20:00.307+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01858417414328003010002", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:20:05.283+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01858417414328052650003", "statuscode": "200", "method": "GET", "path": "/ks/info/product/new"}
+2025-03-08T19:20:10.256+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01858417414328102110004", "statuscode": "200", "method": "POST", "path": "/ks/new/product"}
+2025-03-08T19:20:25.274+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01858417414328252670005", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:20:45.826+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01858417414328458070006", "statuscode": "200", "method": "GET", "path": "/ks/info/product/new"}
+2025-03-08T19:21:08.226+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T19:21:08.246+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T19:21:08.247+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T19:21:08.248+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T19:21:08.248+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T19:21:12.591+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02545617414328725760001", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:21:13.800+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02545617414328737930002", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:21:14.178+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02545617414328741720003", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:21:15.113+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02545617414328750910004", "statuscode": "200", "method": "GET", "path": "/ks/info/product/new"}
+2025-03-08T19:21:49.732+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T19:21:49.752+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T19:21:49.754+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T19:21:49.755+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T19:21:49.755+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T19:21:49.914+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02340017414329098930001", "statuscode": "200", "method": "GET", "path": "/ks/info/product/new"}
+2025-03-08T19:21:54.241+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02340017414329142220002", "statuscode": "200", "method": "GET", "path": "/ks/info/product/new"}
+2025-03-08T19:21:54.723+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02340017414329147060003", "statuscode": "200", "method": "GET", "path": "/ks/info/product/new"}
+2025-03-08T19:21:58.670+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02340017414329186280004", "statuscode": "200", "method": "POST", "path": "/ks/new/product"}
+2025-03-08T19:22:42.220+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02340017414329622030005", "statuscode": "200", "method": "GET", "path": "/ks/info/product/new"}
+2025-03-08T19:22:45.202+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02340017414329651600006", "statuscode": "200", "method": "POST", "path": "/ks/new/product"}
+2025-03-08T19:22:51.716+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T19:22:51.735+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T19:22:51.737+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T19:22:51.737+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T19:22:51.737+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T19:23:05.275+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02561617414329852570001", "statuscode": "200", "method": "GET", "path": "/ks/info/product/new"}
+2025-03-08T19:23:08.195+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02561617414329881680002", "statuscode": "200", "method": "POST", "path": "/ks/new/product"}
+2025-03-08T19:23:19.136+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02561617414329991200003", "statuscode": "200", "method": "GET", "path": "/ks/info/product/edit"}
+2025-03-08T19:23:22.592+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02561617414330025650004", "statuscode": "200", "method": "POST", "path": "/ks/edit/product"}
+2025-03-08T19:24:18.243+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T19:24:18.267+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T19:24:18.269+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T19:24:18.270+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T19:24:18.270+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T19:24:24.947+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02414017414330649370001", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:24:26.576+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02414017414330665680002", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:24:26.865+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02414017414330668570003", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:24:27.043+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02414017414330670350004", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:24:27.197+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02414017414330671890005", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:24:27.351+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02414017414330673430006", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:24:27.813+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02414017414330678060007", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:25:36.615+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02414017414331366060008", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:26:15.001+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T19:26:15.022+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T19:26:15.023+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T19:26:15.024+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T19:26:15.024+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T19:26:15.344+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02464017414331753330001", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:26:19.322+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02464017414331793160002", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:26:19.901+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02464017414331798930003", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T19:26:20.630+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02464017414331806200004", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T21:48:05.422+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T21:48:05.448+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T21:48:05.451+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T21:48:05.451+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T21:48:05.451+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T21:48:10.389+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416903890001", "statuscode": "302", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T21:48:10.391+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416903910002", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T21:48:10.403+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416904030003", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.css"}
+2025-03-08T21:48:10.403+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416904030004", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.js"}
+2025-03-08T21:48:11.259+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416912590005", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T21:48:11.269+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416912690006", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.css"}
+2025-03-08T21:48:11.269+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416912690007", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.js"}
+2025-03-08T21:48:11.401+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416914010008", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T21:48:11.409+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416914090009", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.css"}
+2025-03-08T21:48:11.411+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416914110010", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.js"}
+2025-03-08T21:48:11.537+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416915370011", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T21:48:11.545+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416915450012", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.css"}
+2025-03-08T21:48:11.545+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416915450013", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.js"}
+2025-03-08T21:48:11.671+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416916710014", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T21:48:11.680+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416916800015", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.css"}
+2025-03-08T21:48:11.680+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416916800016", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.js"}
+2025-03-08T21:48:11.826+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416918250017", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T21:48:11.832+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416918320018", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.css"}
+2025-03-08T21:48:11.832+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414416918320019", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.js"}
+2025-03-08T21:48:25.943+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02504417414417059430020", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.css"}
+2025-03-08T21:50:24.340+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T21:50:24.368+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T21:50:24.370+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T21:50:24.371+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T21:50:24.371+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T21:50:33.942+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414418339420001", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T21:50:34.050+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414418339530002", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.css"}
+2025-03-08T21:50:34.050+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414418339590003", "statuscode": "200", "method": "GET", "path": "/ks/assets/login/dist/all.min.js"}
+2025-03-08T21:50:39.445+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414418393000004", "statuscode": "200", "method": "POST", "path": "/ks/signin"}
+2025-03-08T21:50:41.926+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414418419020005", "statuscode": "200", "method": "GET", "path": "/ks/info/manager"}
+2025-03-08T21:50:42.418+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414418424060006", "statuscode": "200", "method": "GET", "path": "/ks/info/roles"}
+2025-03-08T21:50:42.785+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414418427730007", "statuscode": "200", "method": "GET", "path": "/ks/info/permission"}
+2025-03-08T21:50:43.081+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414418430660008", "statuscode": "200", "method": "GET", "path": "/ks/info/op"}
+2025-03-08T21:50:45.805+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414418457840009", "statuscode": "200", "method": "GET", "path": "/ks/menu"}
+2025-03-08T21:51:25.004+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414418849430010", "statuscode": "200", "method": "POST", "path": "/ks/menu/new"}
+2025-03-08T21:51:29.710+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414418896870011", "statuscode": "200", "method": "GET", "path": "/ks/menu/edit/show"}
+2025-03-08T21:51:33.036+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414418929400012", "statuscode": "200", "method": "POST", "path": "/ks/menu/edit"}
+2025-03-08T21:51:48.104+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414419080320013", "statuscode": "200", "method": "POST", "path": "/ks/menu/new"}
+2025-03-08T21:51:52.789+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414419127660014", "statuscode": "200", "method": "GET", "path": "/ks/menu"}
+2025-03-08T21:51:54.493+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414419144820015", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T21:52:50.612+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414419705890016", "statuscode": "200", "method": "GET", "path": "/ks/info/site/edit"}
+2025-03-08T21:52:54.221+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414419742180017", "statuscode": "200", "method": "GET", "path": "/ks/plugins"}
+2025-03-08T21:52:54.246+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414419742460018", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/img/plugin_more.png"}
+2025-03-08T21:52:55.927+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02427217414419756360019", "statuscode": "200", "method": "GET", "path": "/ks/plugins/store"}
+2025-03-08T21:59:21.444+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T21:59:21.464+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T21:59:21.465+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T21:59:21.466+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T21:59:21.466+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T21:59:21.976+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00452817414423617510001", "statuscode": "200", "method": "GET", "path": "/ks/plugins/store"}
+2025-03-08T21:59:26.319+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00452817414423663060002", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T21:59:27.882+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00452817414423678730003", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T22:02:14.771+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T22:02:14.791+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T22:02:14.792+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T22:02:14.793+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T22:02:14.794+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T22:02:23.170+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02167217414425431530001", "statuscode": "200", "method": "GET", "path": "/ks/info/normal_manager/edit"}
+2025-03-08T22:02:23.320+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02167217414425432070002", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/fonts/glyphicons-halflings-regular.woff2"}
+2025-03-08T22:02:32.885+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02167217414425528730003", "statuscode": "200", "method": "GET", "path": "/ks/application/info"}
+2025-03-08T22:02:38.657+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02167217414425586360004", "statuscode": "200", "method": "GET", "path": "/ks/info/site/edit"}
+2025-03-08T22:02:44.467+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02167217414425643410005", "statuscode": "200", "method": "POST", "path": "/ks/edit/site"}
+2025-03-08T22:02:45.176+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02167217414425651680006", "statuscode": "200", "method": "GET", "path": "/ks/application/info"}
+2025-03-08T22:02:45.199+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02167217414425651990007", "statuscode": "200", "method": "GET", "path": "/ks/assets/dist/css/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf"}
+2025-03-08T22:02:50.617+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02167217414425706090008", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T22:02:55.419+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02167217414425753990009", "statuscode": "200", "method": "GET", "path": "/ks/info/site/edit"}
+2025-03-08T22:02:58.474+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02167217414425784370010", "statuscode": "200", "method": "POST", "path": "/ks/edit/site"}
+2025-03-08T22:02:59.429+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02167217414425794270011", "statuscode": "302", "method": "GET", "path": "/ks/info/site"}
+2025-03-08T22:02:59.456+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02167217414425794390012", "statuscode": "200", "method": "GET", "path": "/ks/info/site/edit"}
+2025-03-08T22:03:01.607+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02167217414425815990013", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T22:09:48.876+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T22:09:48.896+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T22:09:48.898+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T22:09:48.898+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T22:09:48.899+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T22:09:56.373+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414429963620001", "statuscode": "200", "method": "GET", "path": "/ks/info/product"}
+2025-03-08T22:10:00.924+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414430009230002", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:10:06.032+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414430060310003", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:10:06.624+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414430066240004", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:10:07.137+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414430071360005", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:10:10.324+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414430102110006", "statuscode": "200", "method": "POST", "path": "/ks/signin"}
+2025-03-08T22:14:17.758+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414432577580007", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:14:18.352+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414432583510008", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:14:18.794+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414432587930009", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:14:19.031+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414432590300010", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:14:19.357+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414432593560011", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:14:19.498+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414432594970012", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:14:19.638+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414432596380013", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:14:24.059+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414432639460014", "statuscode": "200", "method": "POST", "path": "/ks/signin"}
+2025-03-08T22:15:11.302+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02075217414433113020015", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:16.669+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-08T22:15:16.688+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-08T22:15:16.690+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-08T22:15:16.691+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-08T22:15:16.691+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-08T22:15:18.867+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433188670001", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:19.007+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433190060002", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:19.160+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433191600003", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:19.290+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433192890004", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:19.431+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433194300005", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:19.574+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433195730006", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:22.100+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433220990007", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:23.031+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433230300008", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:23.175+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433231740009", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:23.335+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433233350010", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:23.760+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433237590011", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:24.780+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433247790012", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:24.951+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433249510013", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:25.110+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433251100014", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-08T22:15:25.273+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb01694817414433252720015", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:22:06.808+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-09T00:22:06.832+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-09T00:22:06.835+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-09T00:22:06.835+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-09T00:22:06.836+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-09T00:22:20.313+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00774817414509403120001", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:22:21.321+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00774817414509413200002", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:22:21.573+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00774817414509415720003", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:22:21.767+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00774817414509417660004", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:22:22.121+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00774817414509421190005", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:22:22.265+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00774817414509422650006", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:22:22.420+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00774817414509424190007", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:22:22.566+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb00774817414509425660008", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:22:44.531+0800	[34mINFO[0m	engine/engine.go:407	初始化数据库连接
+2025-03-09T00:22:44.575+0800	[34mINFO[0m	engine/engine.go:407	初始化配置
+2025-03-09T00:22:44.583+0800	[34mINFO[0m	engine/engine.go:407	初始化导航栏按钮
+2025-03-09T00:22:44.584+0800	[34mINFO[0m	engine/engine.go:407	初始化插件
+2025-03-09T00:22:44.585+0800	[34mINFO[0m	engine/engine.go:407	初始化成功🍺🍺
+2025-03-09T00:23:34.748+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510147360001", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:23:36.096+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510160960002", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:23:36.284+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510162830003", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:23:36.435+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510164340004", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:23:36.601+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510166000005", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:23:36.756+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510167530006", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:23:36.907+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510169070007", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:23:37.067+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510170660008", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:23:37.229+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510172290009", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:23:37.403+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510174030010", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:23:37.530+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510175290011", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:23:37.674+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510176740012", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:23:37.824+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510178240013", "statuscode": "200", "method": "GET", "path": "/ks/login"}
+2025-03-09T00:23:37.972+0800	[34mINFO[0m	controller/handler.go:25	[GoAdmin] access log	{"traceID": "a9feadb02247217414510179710014", "statuscode": "200", "method": "GET", "path": "/ks/login"}

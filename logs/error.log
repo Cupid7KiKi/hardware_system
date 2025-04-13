@@ -1,0 +1,764 @@
+2025-03-08T19:20:10.238+0800	[31mERROR[0m	logger/logger.go:313	insert data error: Error 1292 (22007): Incorrect datetime value: '' for column 'updated_at' at row 1	{"traceID": "a9feadb01858417414328102110004"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).NewForm
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/new.go:118
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).NewForm
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/modules/guard/new.go:121
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).initRouter.Middleware.(*Invoker).Middleware.func6
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T19:21:58.653+0800	[31mERROR[0m	logger/logger.go:313	insert data error: Error 1292 (22007): Incorrect datetime value: '' for column 'updated_at' at row 1	{"traceID": "a9feadb02340017414329186280004"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).NewForm
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/new.go:118
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).NewForm
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/modules/guard/new.go:121
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).initRouter.Middleware.(*Invoker).Middleware.func6
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T19:22:45.184+0800	[31mERROR[0m	logger/logger.go:313	insert data error: Error 1292 (22007): Incorrect datetime value: '' for column 'updated_at' at row 1	{"traceID": "a9feadb02340017414329651600006"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).NewForm
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/new.go:118
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).NewForm
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/modules/guard/new.go:121
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).initRouter.Middleware.(*Invoker).Middleware.func6
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T21:48:10.403+0800	[31mERROR[0m	logger/logger.go:313	GlobalDeferHandler error wrong theme name	{"traceID": "a9feadb02504417414416904030003"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/handler.go:32
+runtime.gopanic
+	D:/Language/go1.24.1/src/runtime/panic.go:792
+github.com/GoAdminGroup/go-admin/template.Get
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/template/template.go:147
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.aTemplateByTheme
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/common.go:308
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).Assets
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/show.go:363
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T21:48:10.403+0800	[31mERROR[0m	logger/logger.go:313	GlobalDeferHandler error wrong theme name	{"traceID": "a9feadb02504417414416904030004"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/handler.go:32
+runtime.gopanic
+	D:/Language/go1.24.1/src/runtime/panic.go:792
+github.com/GoAdminGroup/go-admin/template.Get
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/template/template.go:147
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.aTemplateByTheme
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/common.go:308
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).Assets
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/show.go:363
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T21:48:11.270+0800	[31mERROR[0m	logger/logger.go:313	GlobalDeferHandler error wrong theme name	{"traceID": "a9feadb02504417414416912690007"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/handler.go:32
+runtime.gopanic
+	D:/Language/go1.24.1/src/runtime/panic.go:792
+github.com/GoAdminGroup/go-admin/template.Get
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/template/template.go:147
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.aTemplateByTheme
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/common.go:308
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).Assets
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/show.go:363
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T21:48:11.270+0800	[31mERROR[0m	logger/logger.go:313	GlobalDeferHandler error wrong theme name	{"traceID": "a9feadb02504417414416912690006"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/handler.go:32
+runtime.gopanic
+	D:/Language/go1.24.1/src/runtime/panic.go:792
+github.com/GoAdminGroup/go-admin/template.Get
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/template/template.go:147
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.aTemplateByTheme
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/common.go:308
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).Assets
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/show.go:363
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T21:48:11.409+0800	[31mERROR[0m	logger/logger.go:313	GlobalDeferHandler error wrong theme name	{"traceID": "a9feadb02504417414416914090009"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/handler.go:32
+runtime.gopanic
+	D:/Language/go1.24.1/src/runtime/panic.go:792
+github.com/GoAdminGroup/go-admin/template.Get
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/template/template.go:147
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.aTemplateByTheme
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/common.go:308
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).Assets
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/show.go:363
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T21:48:11.411+0800	[31mERROR[0m	logger/logger.go:313	GlobalDeferHandler error wrong theme name	{"traceID": "a9feadb02504417414416914110010"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/handler.go:32
+runtime.gopanic
+	D:/Language/go1.24.1/src/runtime/panic.go:792
+github.com/GoAdminGroup/go-admin/template.Get
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/template/template.go:147
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.aTemplateByTheme
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/common.go:308
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).Assets
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/show.go:363
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T21:48:11.545+0800	[31mERROR[0m	logger/logger.go:313	GlobalDeferHandler error wrong theme name	{"traceID": "a9feadb02504417414416915450012"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/handler.go:32
+runtime.gopanic
+	D:/Language/go1.24.1/src/runtime/panic.go:792
+github.com/GoAdminGroup/go-admin/template.Get
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/template/template.go:147
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.aTemplateByTheme
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/common.go:308
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).Assets
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/show.go:363
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T21:48:11.545+0800	[31mERROR[0m	logger/logger.go:313	GlobalDeferHandler error wrong theme name	{"traceID": "a9feadb02504417414416915450013"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/handler.go:32
+runtime.gopanic
+	D:/Language/go1.24.1/src/runtime/panic.go:792
+github.com/GoAdminGroup/go-admin/template.Get
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/template/template.go:147
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.aTemplateByTheme
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/common.go:308
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).Assets
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/show.go:363
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T21:48:11.680+0800	[31mERROR[0m	logger/logger.go:313	GlobalDeferHandler error wrong theme name	{"traceID": "a9feadb02504417414416916800015"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/handler.go:32
+runtime.gopanic
+	D:/Language/go1.24.1/src/runtime/panic.go:792
+github.com/GoAdminGroup/go-admin/template.Get
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/template/template.go:147
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.aTemplateByTheme
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/common.go:308
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).Assets
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/show.go:363
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T21:48:11.680+0800	[31mERROR[0m	logger/logger.go:313	GlobalDeferHandler error wrong theme name	{"traceID": "a9feadb02504417414416916800016"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/handler.go:32
+runtime.gopanic
+	D:/Language/go1.24.1/src/runtime/panic.go:792
+github.com/GoAdminGroup/go-admin/template.Get
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/template/template.go:147
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.aTemplateByTheme
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/common.go:308
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).Assets
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/show.go:363
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T21:48:11.832+0800	[31mERROR[0m	logger/logger.go:313	GlobalDeferHandler error wrong theme name	{"traceID": "a9feadb02504417414416918320018"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/handler.go:32
+runtime.gopanic
+	D:/Language/go1.24.1/src/runtime/panic.go:792
+github.com/GoAdminGroup/go-admin/template.Get
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/template/template.go:147
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.aTemplateByTheme
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/common.go:308
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).Assets
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/show.go:363
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T21:48:11.833+0800	[31mERROR[0m	logger/logger.go:313	GlobalDeferHandler error wrong theme name	{"traceID": "a9feadb02504417414416918320019"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/handler.go:32
+runtime.gopanic
+	D:/Language/go1.24.1/src/runtime/panic.go:792
+github.com/GoAdminGroup/go-admin/template.Get
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/template/template.go:147
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.aTemplateByTheme
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/common.go:308
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).Assets
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/show.go:363
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
+2025-03-08T21:48:25.943+0800	[31mERROR[0m	logger/logger.go:313	GlobalDeferHandler error wrong theme name	{"traceID": "a9feadb02504417414417059430020"}
+github.com/GoAdminGroup/go-admin/modules/logger.ErrorCtx
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/modules/logger/logger.go:313
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/handler.go:32
+runtime.gopanic
+	D:/Language/go1.24.1/src/runtime/panic.go:792
+github.com/GoAdminGroup/go-admin/template.Get
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/template/template.go:147
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.aTemplateByTheme
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/common.go:308
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).Assets
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/controller/show.go:363
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).themeMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:141
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).traceIDMiddleware
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:123
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/plugins/admin/router.go:111
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/context/context.go:105
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.26/adapter/gin/gin.go:87
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/Cupid_KiKi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	D:/Language/go1.24.1/src/net/http/server.go:3301
+net/http.(*conn).serve
+	D:/Language/go1.24.1/src/net/http/server.go:2102
