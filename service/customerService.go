@@ -4,14 +4,6 @@ import (
 	"fmt"
 )
 
-func GetUniqueCustomers() (results []map[string]interface{}) {
-	results, err := GetDb().Query("SELECT t.* FROM customers t\nINNER JOIN (\n    SELECT MIN(id) as min_id \n    FROM customers \n    GROUP BY name\n) g ON t.id = g.min_id;")
-	if err != nil {
-		return
-	}
-	return
-}
-
 func GetCustomers() (results []map[string]interface{}) {
 	results, err := GetDb().Query("SELECT * FROM customers")
 	if err != nil {
@@ -52,33 +44,31 @@ func GetContactByCustomer(customerID string) (results []map[string]interface{}) 
 	}
 	return
 }
-func GetCustomerNameByContact(contact string) (results []map[string]interface{}) {
-	results, err := GetDb().Query("SELECT id,name \nFROM customers \nWHERE contact = (SELECT contact FROM customers WHERE id = ?);", contact)
+func GetCompanyNameByContactName(contact string) (results []map[string]interface{}) {
+	query := fmt.Sprintf("SELECT \n    c.id AS id,\n    cc.name AS name\nFROM \n    orders o\nJOIN \n    customers c ON o.id = c.id\nJOIN \n    customers_companies cc ON c.company_id = cc.id\nWHERE \n    o.contact_id = '%s';", contact)
+	results, err := GetDb().Query(query)
 	if err != nil {
 		return
 	}
 	return
 }
 
-func GetContact() (results []map[string]interface{}) {
-	//strs := make([]string, len(t))
-	//for i, n := range t {
-	//	strs[i] = fmt.Sprintf("%s", n)
-	//}
-	//result := strings.Join(strs, ",")
-	//fmt.Println("result:", result)
-	//results, err := GetDb().Query("SELECT * FROM customers WHERE contact in(?)", result)
-	// 构建占位符和参数切片
-	//placeholders := make([]string, len(t))
-	//params := make([]interface{}, len(t))
-	//for i, n := range t {
-	//	placeholders[i] = "?"
-	//	params[i] = n
-	//}
-
+func GetContactName() (results []map[string]interface{}) {
 	// 构建查询
-	query := fmt.Sprintf("SELECT id,contact FROM customers;")
+	query := fmt.Sprintf("SELECT * FROM companies_contacts;")
 
+	// 执行查询
+	results, err := GetDb().Query(query)
+	if err != nil {
+		return
+	}
+	return
+}
+
+func GetContactByCname(val string) (results []map[string]interface{}) {
+	// 构建查询
+	query := fmt.Sprintf("SELECT contact FROM customers WHERE contact = %s", val)
+	fmt.Println(query)
 	// 执行查询
 	results, err := GetDb().Query(query)
 	if err != nil {

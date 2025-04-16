@@ -22,7 +22,7 @@ func GetProductsTable(ctx *context.Context) table.Table {
 	info.AddField("ID", "id", db.Int).
 		FieldFilterable(types.FilterType{Operator: types.FilterOperatorLike})
 	info.AddField("产品编码", "product_code", db.Varchar)
-	info.AddField("产品名称", "product_name", db.Varchar)
+	info.AddField("产品名称", "product_name", db.Varchar).FieldFilterable(types.FilterType{Operator: types.FilterOperatorLike})
 	info.AddField("所属分类", "category_name", db.Int).
 		FieldJoin(types.Join{
 			Table:     "product_categories", // 连表的表名

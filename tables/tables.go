@@ -25,6 +25,8 @@ var Generators = map[string]table.Generator{
 	"order_items":        pages.GetOrderitemsTable,
 	"customers":          pages.GetCustomersTable,
 	"customer_contacts":  pages.GetCustomercontactsTable,
+	"customer_companies": pages.GetCustomerscompaniesTable,
+	"companies_contacts": pages.GetCompaniescontactsTable,
 	"financial_records":  pages.GetFinancialrecordsTable,
 	// generators end
 }

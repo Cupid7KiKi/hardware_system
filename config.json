@@ -16,7 +16,7 @@
 	"language": "cn",
 	"prefix": "ks",
 	"theme": "sword",
-	"asset_root_path": "D:\\Go_WorkPlace\\src\\hardware_system\\public\\",
+	"asset_root_path": "./public",
 	"store": {
 		"path": "./uploads",
 		"prefix": "uploads"

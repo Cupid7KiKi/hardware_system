@@ -9,7 +9,6 @@ import (
 	"github.com/GoAdminGroup/go-admin/template"
 	"github.com/GoAdminGroup/go-admin/template/types"
 	"github.com/GoAdminGroup/go-admin/template/types/form"
-	selection "github.com/GoAdminGroup/go-admin/template/types/form/select"
 	"github.com/shopspring/decimal"
 	"hardware_system/service"
 	"strconv"
@@ -23,14 +22,15 @@ func GetOrderitemsTable(ctx *context.Context) table.Table {
 	info := orderItems.GetInfo().HideFilterArea()
 
 	info.AddField("ID", "id", db.Int)
-	info.AddField("下单人", "contact", db.Int).FieldJoin(types.Join{
-		Table:     "customers",
-		Field:     "contact_name",
-		JoinField: "id",
-	}).FieldFilterable(types.FilterType{Operator: types.FilterOperatorLike}).
-		FieldDisplay(func(value types.FieldModel) interface{} {
-			return value.Row["customers_goadmin_join_contact"]
-		})
+	//info.AddField("Custom", "name", db.Varchar).
+	//	FieldJoin(types.Join{
+	//		Table:     "companies_contacts",
+	//		Field:     "custom",
+	//		JoinField: "id",
+	//	}).FieldFilterable(types.FilterType{Operator: types.FilterOperatorLike}).
+	//	FieldDisplay(func(value types.FieldModel) interface{} {
+	//		return value.Row["companies_contacts_goadmin_join_name"]
+	//	})
 	info.AddField("订单编号", "id", db.Varchar).FieldJoin(types.Join{
 		Table:     "orders",
 		Field:     "order_id",
@@ -41,6 +41,15 @@ func GetOrderitemsTable(ctx *context.Context) table.Table {
 		FieldDisplay(func(value types.FieldModel) interface{} {
 			return value.Row["orders_goadmin_join_id"]
 		})
+	info.AddField("公司名称", "company_name", db.Varchar).
+		FieldDisplay(func(value types.FieldModel) interface{} {
+			return service.DisplayCompanyName(fmt.Sprintf(value.Row["orders_goadmin_join_id"].(string)))["company_name"]
+		})
+	info.AddField("下单人", "contact_name", db.Varchar).
+		FieldDisplay(func(value types.FieldModel) interface{} {
+			//fmt.Println(service.DisplayContactName(fmt.Sprintf(value.Row["orders_goadmin_join_id"].(string))))
+			return service.DisplayContactName(fmt.Sprintf(value.Row["orders_goadmin_join_id"].(string)))["contact_name"]
+		}).FieldFilterable(types.FilterType{Operator: types.FilterOperatorLike})
 	info.AddField("产品名称", "product_name", db.Int).FieldJoin(types.Join{
 		Table:     "products",
 		Field:     "product_id",
@@ -61,17 +70,17 @@ func GetOrderitemsTable(ctx *context.Context) table.Table {
 	formList := orderItems.GetForm().AddXssJsFilter()
 	formList.AddField("ID", "id", db.Int, form.Default).
 		FieldDisableWhenCreate()
-	formList.AddField("下单人", "contact_name", db.Int, form.SelectSingle).FieldOptions(service.TransFieldOptions(service.GetCustomers(), "contact", "id")).
-		FieldOnChooseAjax("order_id", "choose/contact_name", func(ctx *context.Context) (success bool, msg string, data interface{}) {
-			cn := ctx.FormValue("value")
-			//fmt.Println(cn)
-			oID := service.GetOrderByContact(cn)
-			//fmt.Println("oID:", oID)
-			data = make(selection.Options, len(oID))
-			data = service.TransSelectionOptions(oID, "id", "id")
-			return true, "ok", data
-		})
-	formList.AddField("订单编号", "order_id", db.Int, form.SelectSingle).FieldOptions(service.TransFieldOptions(service.GetOrders(), "id", "id"))
+	//formList.AddField("下单人", "name", db.Int, form.SelectSingle).FieldOptions(service.TransFieldOptions(service.GetCustomers(), "contact", "id")).
+	//	FieldOnChooseAjax("order_id", "choose/name", func(ctx *context.Context) (success bool, msg string, data interface{}) {
+	//		cn := ctx.FormValue("value")
+	//		//fmt.Println(cn)
+	//		oID := service.GetOrderByContact(cn)
+	//		//fmt.Println("oID:", oID)
+	//		data = make(selection.Options, len(oID))
+	//		data = service.TransSelectionOptions(oID, "id", "id")
+	//		return true, "ok", data
+	//	})
+	formList.AddField("订单编号", "order_id", db.Int, form.SelectSingle).FieldOptions(service.TransFieldOptions(service.GetOrders(), "id", "id")).FieldDisplayButCanNotEditWhenUpdate()
 	//添加动态表格
 	formList.AddTable("产品条目", "setting", func(panel *types.FormPanel) {
 		panel.AddField("产品名称", "product_id", db.Int, form.SelectSingle).
@@ -112,8 +121,22 @@ $(function () {
 			})
 	}).FieldDisableWhenUpdate()
 
+	formList.AddField("总计", "total_amount", db.Decimal, form.Custom).FieldCustomContent(template.HTML(`
+	<span class="input-group-addon">¥</span>
+	<input type="text" name="total_amount" value="{{ .Value }}" style="width: 120px;text-align: right;" class="form-control total_amount" readonly>
+	`)).FieldCustomJs(template.JS(`
+			$(function () {
+	 			$('.total_amount').inputmask({
+				   alias: "currency",
+				   radixPoint: ".",
+				   prefix: "",
+				   removeMaskOnSubmit: true
+	 			});
+	     	});
+	 `)).FieldDisableWhenUpdate().FieldDisplayButCanNotEditWhenUpdate()
+
 	formList.AddField("产品名称", "product_id", db.Int, form.SelectSingle).FieldDisableWhenCreate().FieldOptions(service.TransFieldOptions(service.GetProducts(), "product_name", "id")).
-		FieldOnChooseAjax("sale_price", "choose/product_id", func(ctx *context.Context) (success bool, msg string, data interface{}) {
+		FieldOnChooseAjax("unit_price", "choose/product_id", func(ctx *context.Context) (success bool, msg string, data interface{}) {
 			pID := ctx.FormValue("value")
 			s_pice := service.GetProductSalePrice(pID)
 			//fmt.Println(reflect.TypeOf(service.TransDecimal(s_pice)))
@@ -121,8 +144,18 @@ $(function () {
 			data = service.TransDecimal(s_pice)
 			return true, "ok", data
 		})
-
-	formList.AddField("产品单价", "sale_price", db.Decimal, form.Custom).FieldCustomContent(template.HTML(`
+	formList.AddField("数量", "quantity", db.Int, form.Custom).FieldCustomContent(template.HTML(`
+	<input type="number" name="quantity" value="{{ .Value }}" style="width: 120px;text-align: right;text-align: center;" class="form-control quantity">
+	`)).
+		FieldDisableWhenCreate().FieldCustomJs(template.JS(`
+		var pathname = window.location.pathname;
+		if(pathname === "/ks/info/order_items/edit"){
+			$(document).on('input change', 'input[name="quantity"]', function() {
+				console.log('数量变更为:', $(this).val());
+			});
+		}
+		`))
+	formList.AddField("单价", "sale_price", db.Decimal, form.Custom).FieldCustomContent(template.HTML(`
 	<span class="input-group-addon">¥</span>
 	<input type="text" name="sale_price" value="{{ .Value }}" style="width: 120px;text-align: right;" class="form-control sale_price" readonly>
 	`)).FieldCustomJs(template.JS(`
@@ -137,25 +170,8 @@ $(function () {
 	 			});
 	     });
 		}
-	 `)).FieldDisableWhenCreate().
-		FieldDisplay(func(value types.FieldModel) interface{} {
-			//fmt.Println(value.Row["product_id"])
-			str := fmt.Sprint(value.Row["product_id"])
-			sale_price := service.TransDecimal(service.GetProductSalePrice(str))
-			return sale_price
-		})
-	formList.AddField("数量", "quantity", db.Int, form.Custom).FieldCustomContent(template.HTML(`
-	<input type="number" name="quantity" value="{{ .Value }}" style="width: 120px;text-align: right;text-align: center;" class="form-control quantity">
-	`)).
-		FieldDisableWhenCreate().FieldCustomJs(template.JS(`
-		var pathname = window.location.pathname;
-		if(pathname === "/ks/info/order_items/edit"){
-			$(document).on('input change', 'input[name="quantity"]', function() {
-				console.log('数量变更为:', $(this).val());
-			});
-		}
-		`))
-	formList.AddField("合计", "amount", db.Decimal, form.Custom).FieldCustomContent(template.HTML(`
+	 `)).FieldDisableWhenCreate()
+	formList.AddField("小计", "amount", db.Decimal, form.Custom).FieldCustomContent(template.HTML(`
 	<span class="input-group-addon">¥</span>
 	<input type="text" name="amount" value="{{ .Value }}" style="width: 120px;text-align: right;" class="form-control amount" readonly>
 	`)).FieldCustomJs(template.JS(`
@@ -170,24 +186,10 @@ $(function () {
 	 			});
 	     });
 		}
-	 `)).FieldDisableWhenCreate()
-
-	// 4. 添加成交价格字段
-	formList.AddField("成交价格", "unit_price", db.Decimal, form.Currency).
-		FieldDefault("0.00").FieldPostFilterFn(func(value types.PostFieldModel) interface{} {
-		return nil
-	}).FieldDisableWhenUpdate()
-
-	//// 5. 添加自定义JS（确保单价字段更新时触发计算）
-	//// 5. 计算逻辑
-	//formList.SetFooterHtml(template.HTML(`
-	//	<script>
-	//
-	//	</script>
-	//`))
+	 `)).FieldDisableWhenCreate().FieldDisplayButCanNotEditWhenUpdate()
 
 	formList.SetInsertFn(func(values form2.Values) error {
-		//fmt.Println("看看", values["amount"][0])
+		//fmt.Println("看看", values)
 		// 构造批量插入的SQL
 		var valueStrings []string
 		var valueArgs []interface{}
@@ -198,16 +200,15 @@ $(function () {
 			return fmt.Errorf("数据长度不匹配")
 		}
 
-		// 处理可能为空的字段
-		var contactName int
-		if len(values["contact_name"]) > 0 {
-			contactName, _ = strconv.Atoi(values.Get("contact_name"))
-		}
-
 		var orderID int
 		if len(values["order_id"]) > 0 {
 			orderID, _ = strconv.Atoi(values.Get("order_id"))
 		}
+
+		//var total_amount decimal.Decimal
+		//if len(values["total_amount"]) > 0 {
+		//	total_amount, _ = decimal.NewFromString(values.Get("total_amount"))
+		//}
 
 		for i := 0; i < len(values["product_id"]); i++ {
 			// 转换各字段数据类型
@@ -221,6 +222,11 @@ $(function () {
 				return fmt.Errorf("数量转换失败: %v", err)
 			}
 
+			salePrice, err := decimal.NewFromString(values["sale_price"][i])
+			if err != nil {
+				return fmt.Errorf("单价转换失败: %v", err)
+			}
+
 			amount, err := decimal.NewFromString(values["amount"][i])
 			if err != nil {
 				return fmt.Errorf("金额转换失败: %v", err)
@@ -229,23 +235,32 @@ $(function () {
 			// 构建参数
 			valueStrings = append(valueStrings, "(?, ?, ?, ?, ?)")
 			valueArgs = append(valueArgs,
-				contactName, // contact_name INT
-				orderID,     // order_id INT
-				productID,   // product_id INT
-				quantity,    // quantity INT
-				amount,      // amount DECIMAL(10,2)
+				//contactName, // contact_name INT
+				orderID,   // order_id INT
+				productID, // product_id INT
+				quantity,  // quantity INT
+				salePrice, //unit_price DECIMAL(10,2)
+				amount,    // amount DECIMAL(10,2)
 			)
 		}
 
 		fmt.Println("==== 开始插入 ====") // 调试标记1
 		// 执行批量插入
-		stmt := fmt.Sprintf("INSERT INTO order_items (contact_name, order_id, product_id, quantity, amount) VALUES %s",
+		stmt := fmt.Sprintf("INSERT INTO order_items (order_id, product_id, quantity,sale_price, amount) VALUES %s",
 			strings.Join(valueStrings, ","))
 
 		// 打印最终SQL（使用占位符版本）
 		fmt.Printf("执行SQL: %s\n参数: %v\n", stmt, valueArgs)
 
+		//upstmt := fmt.Sprintf("INSERT INTO orders (total_amount) VALUES %s",
+		//	total_amount)
+
 		_, err := service.GetDb().Exec(stmt, valueArgs...)
+		//exec, err := service.GetDb().Exec("UPDATE orders SET total_amount = (?) WHERE id = (?)", total_amount, orderID)
+		//if err != nil {
+		//	return err
+		//}
+		//fmt.Println(exec)
 		if err != nil {
 			return fmt.Errorf("数据库插入失败: %v", err)
 		}
@@ -261,7 +276,7 @@ $(function () {
 console.log("现在是新建页面！！！");
 $(function() {
     // 初始化输入掩码（合并重复初始化）
-    $('.sale_price, .amount').inputmask({
+    $('.sale_price, .amount, .total_amount').inputmask({
         alias: "currency",
         radixPoint: ".",
         prefix: "",
@@ -342,7 +357,7 @@ function calculateTableTotal() {
         const amount = parseFormattedNumber($(this).find('input[name="amount"]').val());
         totalSum += amount;
     });
-    $('input[name="unit_price"]').val(totalSum.toFixed(2));
+    $('input[name="total_amount"]').val(totalSum.toFixed(2));
 }
 
 // 初始化计算逻辑

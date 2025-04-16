@@ -2,8 +2,6 @@ package service
 
 import (
 	"fmt"
-	"strconv"
-	"strings"
 )
 
 func GetOrders() (results []map[string]interface{}) {
@@ -38,37 +36,23 @@ func GetOrdersCount() int64 {
 	return count
 }
 
-func GetOrderByContact(value string) (results []map[string]interface{}) {
-	v, errr := strconv.Atoi(value)
-	if errr != nil {
-		return
-	}
-	query := fmt.Sprintf("SELECT * FROM orders WHERE c_name = %d", v)
+func GetTotalAmountFromOrderID(orderID string) map[string]interface{} {
+	query := fmt.Sprintf("SELECT SUM(amount) FROM order_items WHERE order_id = '%s';", orderID)
 	results, err := GetDb().Query(query)
 	if err != nil {
-		return
+		return nil
 	}
-	return
-}
+	var amountStr string
+	amount := make(map[string]interface{})
+	var values interface{}
 
-func GetOrderID(t []interface{}) (results []map[string]interface{}) {
-	// 1. 提取有效参数（过滤非整型值）
-	var ids []interface{}
-	for _, n := range t {
-		switch v := n.(type) {
-		case int, int64:
-			ids = append(ids, v)
-		case float64:
-			if v == float64(int64(v)) {
-				ids = append(ids, int64(v))
-			}
+	for _, v := range results {
+		if s, ok := v["SUM(amount)"]; ok {
+			amountStr = string(s.([]uint8))
+			values = amountStr
 		}
 	}
-	// 2. 构建参数化查询（避免 SQL 注入）
-	query := "SELECT * FROM orders WHERE id IN (?" + strings.Repeat(",?", len(ids)-1) + ")"
-	results, err := GetDb().Query(query, ids...)
-	if err != nil {
-		return
-	}
-	return
+	// 将结果存入map
+	amount["SUM(amount)"] = values
+	return amount
 }
