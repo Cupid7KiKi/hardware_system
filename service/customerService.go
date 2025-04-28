@@ -45,7 +45,7 @@ func GetContactByCustomer(customerID string) (results []map[string]interface{}) 
 	return
 }
 func GetCompanyNameByContactName(contact string) (results []map[string]interface{}) {
-	query := fmt.Sprintf("SELECT \n    c.id AS id,\n    cc.name AS name\nFROM \n    orders o\nJOIN \n    customers c ON o.id = c.id\nJOIN \n    customers_companies cc ON c.company_id = cc.id\nWHERE \n    o.contact_id = '%s';", contact)
+	query := fmt.Sprintf("SELECT \n    cc.id AS id,cc.name AS company_name\nFROM \n    customers c\nJOIN \n    customers_companies cc ON c.company_id = cc.id\nWHERE \n    c.contact_id = '%s';", contact)
 	results, err := GetDb().Query(query)
 	if err != nil {
 		return

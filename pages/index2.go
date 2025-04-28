@@ -3,50 +3,40 @@ package pages
 import (
 	"fmt"
 	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/auth"
 	"github.com/GoAdminGroup/go-admin/template"
 	"github.com/GoAdminGroup/go-admin/template/chartjs"
 	"github.com/GoAdminGroup/go-admin/template/color"
 	"github.com/GoAdminGroup/go-admin/template/icon"
 	"github.com/GoAdminGroup/go-admin/template/types"
 	"github.com/GoAdminGroup/themes/adminlte/components/smallbox"
+	"github.com/GoAdminGroup/themes/sword/components/chart_legend"
 	"hardware_system/pkg"
 	"hardware_system/service"
-	"net"
-
 	template2 "html/template"
+	"time"
 )
 
 func GetIndex2(ctx *context.Context) (types.Panel, error) {
-	//获取客户端 IP（自动处理 X-Forwarded-For）
-	clientIP := ctx.LocalIP()
+	////获取客户端 IP（自动处理 X-Forwarded-For）
+	//clientIP := ctx.LocalIP()
+	//
+	//// 确保是 IPv4
+	//ip := net.ParseIP(clientIP)
+	//if ip != nil && ip.To4() != nil {
+	//	clientIP = ip.To4().String()
+	//}
 
-	// 确保是 IPv4
-	ip := net.ParseIP(clientIP)
-	if ip != nil && ip.To4() != nil {
-		clientIP = ip.To4().String()
-	}
+	//fmt.Printf("客户端 IPv4: %s\n", clientIP)
 
-	fmt.Printf("客户端 IPv4: %s\n", clientIP)
-
-	user := auth.Auth(ctx)
-	avatar := user.Avatar
-	ctx.WriteString("User Avatar: " + avatar)
+	//user := auth.Auth(ctx)
+	//avatar := user.Avatar
+	//ctx.WriteString("User Avatar: " + avatar)
 	//统计产品数量
 	//productCount := service.GetProductsCount()
 
 	tmp := template.Default(ctx)
 
-	//box := tmp.Box().
-	//	WithHeadBorder().                                                                                                                                                                                                        // 带顶部的边栏
-	//	SetHeader("Latest Orders").                                                                                                                                                                                              // 设置头部内容
-	//	SetHeadColor("#f7f7f7").                                                                                                                                                                                                 // 设置头部背景色
-	//	SetBody(`Hello`).                                                                                                                                                                                                        // 设置内容
-	//	SetFooter(`<div class="clearfix"><a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">处理订单</a><a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">查看所有新订单</a></div>`) // 设置底部HTML
-	//
-	//cardcard := card.New().SetTitle("测试").SetContent(template.HTML(`<a href="https://www.baidu.com">1</a>`))
-
-	rows := []pkg.BaseComponent{getRow1(tmp), getRow2(tmp), getRow3(tmp)}
+	rows := []pkg.BaseComponent{getRow0(tmp), getRow1(tmp), getRow2(tmp), getRow3(tmp)}
 	return types.Panel{
 		Title: "工作台",
 		Content: func() template2.HTML {
@@ -57,92 +47,127 @@ func GetIndex2(ctx *context.Context) (types.Panel, error) {
 			return html
 		}(),
 	}, nil
-	//// 获取数据库连接
-	//conn := service.GetDb()
-	//
-	//// 统计产品数量
-	//productCount, err := conn.Table("products").Count()
-	//if err != nil {
-	//	return types.Panel{}, err
-	//}
-	//
-	//// 统计客户数量
-	//customerCount, err := conn.Table("customers").Count()
-	//if err != nil {
-	//	return types.Panel{}, err
-	//}
-	//
-	//// 统计订单数量
-	//orderCount, err := conn.Table("orders").Count()
-	//if err != nil {
-	//	return types.Panel{}, err
-	//}
-	//
-	//// 创建仪表盘卡片
-	//cards := template.DefaultCard().
-	//	SetContent(`
-	//    <div class="row">
-	//        <div class="col-md-4">
-	//            <div class="small-box bg-info">
-	//                <div class="inner">
-	//                    <h3>` + types.StrconvItoa(productCount) + `</h3>
-	//                    <p>产品数量</p>
-	//                </div>
-	//                <div class="icon">
-	//                    <i class="ion ion-bag"></i>
-	//                </div>
-	//                <a href="/info/products" class="small-box-footer">更多信息 <i class="fa fa-arrow-circle-right"></i></a>
-	//            </div>
-	//        </div>
-	//        <div class="col-md-4">
-	//            <div class="small-box bg-success">
-	//                <div class="inner">
-	//                    <h3>` + types.StrconvItoa(customerCount) + `</h3>
-	//                    <p>客户数量</p>
-	//                </div>
-	//                <div class="icon">
-	//                    <i class="ion ion-person-add"></i>
-	//                </div>
-	//                <a href="/info/customers" class="small-box-footer">更多信息 <i class="fa fa-arrow-circle-right"></i></a>
-	//            </div>
-	//        </div>
-	//        <div class="col-md-4">
-	//            <div class="small-box bg-warning">
-	//                <div class="inner">
-	//                    <h3>` + types.StrconvItoa(orderCount) + `</h3>
-	//                    <p>订单数量</p>
-	//                </div>
-	//                <div class="icon">
-	//                    <i class="ion ion-stats-bars"></i>
-	//                </div>
-	//                <a href="/info/orders" class="small-box-footer">更多信息 <i class="fa fa-arrow-circle-right"></i></a>
-	//            </div>
-	//        </div>
-	//    </div>
-	//`)
-	//
-	//// 创建图表
-	//chart := chartjs.NewChart().
-	//	SetType("bar").
-	//	SetLabels([]string{"产品", "客户", "订单"}).
-	//	SetDatasets([]chartjs.Dataset{
-	//		{
-	//			Label:           "数量",
-	//			BackgroundColor: []string{"rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(255, 99, 132, 0.2)"},
-	//			BorderColor:     []string{"rgba(75, 192, 192, 1)", "rgba(54, 162, 235, 1)", "rgba(255, 99, 132, 1)"},
-	//			BorderWidth:     1,
-	//			Data:            []int{int(productCount), int(customerCount), int(orderCount)},
-	//		},
-	//	})
-	//
-	//// 创建仪表盘面板
-	//panel := types.Panel{
-	//	Title:       "仪表盘",
-	//	Description: "系统统计信息",
-	//	Content:     template.HTML(cards.GetContent() + chart.GetContent()),
-	//}
-	//
-	//return panel, nil
+}
+
+//func getRow0(ctx *context.Context, tmp template.Template) types.RowAttribute {
+//	//获取客户端 IP（自动处理 X-Forwarded-For）
+//	clientIP := ctx.LocalIP()
+//
+//	// 确保是 IPv4
+//	ip := net.ParseIP(clientIP)
+//	if ip != nil && ip.To4() != nil {
+//		clientIP = ip.To4().String()
+//	}
+//
+//	h := fmt.Sprintf("<div style=\"display:flex;justify-content:space-between;\"><span style=\"font-size:42px;\">%s</span><span style=\"font-size:42px;\">%s</span></div>", clientIP, "上海")
+//
+//	fmt.Printf("客户端 IPv4: %s\n", clientIP)
+//	cardcard := card.New().
+//		SetTitle("客户端").
+//		SetSubTitle("IP属地").
+//		SetContent(template.HTML(h))
+//	//SetAction(template.HTML(`<i aria-label="图标: info-circle-o" class="anticon anticon-info-circle-o"><svg viewBox="64 64 896 896" focusable="false" class="" data-icon="info-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 336a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"></path></svg></i>`)).
+//	//SetContent(template.HTML(`<div><div title="" style="margin-right: 16px;"><span><span>周同比</span><span style="margin-left: 8px;">12%</span></span><span style="color: #f5222d;margin-left: 4px;top: 1px;"><i style="font-size: 12px;" aria-label="图标: caret-up" class="anticon anticon-caret-up"><svg viewBox="0 0 1024 1024" focusable="false" class="" data-icon="caret-up" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"></path></svg></i></span></div><div class="antd-pro-pages-dashboard-analysis-components-trend-index-trendItem" title=""><span><span>日同比</span><span style="margin-left: 8px;">11%</span></span><span style="color: #52c41a;margin-left: 4px;top: 1px;"><i style="font-size: 12px;" aria-label="图标: caret-down" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" class="" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></i></span></div></div>`))
+//	infobox := cardcard.GetContent()
+//	return tmp.Row().SetContent(infobox)
+//	//label := tmp.Label()
+//	//label1 := label.SetContent(smallbox.New().SetTitle("123").SetValue(template2.HTML(clientIP)).GetContent()).GetContent()
+//	//return tmp.Row().SetContent(label1)
+//}
+
+func getRow0(tmp template.Template) types.RowAttribute {
+	col := tmp.Col()
+	year, month, day := time.Now().Date()
+	fmt.Printf("当前年月日: %d年%d月%d日\n", year, month, day)  // 输出示例：2025年4月27日
+	hour, minute, seconds := time.Now().Clock()         // 忽略秒数
+	fmt.Printf("当前时间: %d时%d分\n", hour, minute, seconds) // 输出示例：14时25分
+	//h := fmt.Sprintf("<div class =\"bigjb\"style=\"display:flex;justify-content:space-between;\"><span style=\"font-size:36px;\">%s</span><span style=\"font-size:36px;\">%s</span></div>", "xx省xx市xxxx五金实业有限公司", "上海")
+	h := fmt.Sprintf("<div class=\"info-box\">\n        <div class=\"title\">xx省xx市xxxx五金实业有限公司</div>\n        <div class=\"info-row\">\n            <div id=\"beijing-time\">北京时间: %d年%d月%d日 %d时%d分</div>\n            <div id=\"weather\">天气: 天气: 晴 22°C</div>\n        </div>\n    </div>", year, month, day, hour, minute)
+	cardcard := col.SetSize(types.SizeMD(12)).
+		//SetTitle("xx省xx市xxxx五金实业有限公司").
+		SetContent(template.HTML(h))
+	//SetAction(template.HTML(`<i aria-label="图标: info-circle-o" class="anticon anticon-info-circle-o"><svg viewBox="64 64 896 896" focusable="false" class="" data-icon="info-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 336a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"></path></svg></i>`)).
+	//SetContent(template.HTML(`<div><div title="" style="margin-right: 16px;"><span><span>周同比</span><span style="margin-left: 8px;">12%</span></span><span style="color: #f5222d;margin-left: 4px;top: 1px;"><i style="font-size: 12px;" aria-label="图标: caret-up" class="anticon anticon-caret-up"><svg viewBox="0 0 1024 1024" focusable="false" class="" data-icon="caret-up" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"></path></svg></i></span></div><div class="antd-pro-pages-dashboard-analysis-components-trend-index-trendItem" title=""><span><span>日同比</span><span style="margin-left: 8px;">11%</span></span><span style="color: #52c41a;margin-left: 4px;top: 1px;"><i style="font-size: 12px;" aria-label="图标: caret-down" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" class="" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></i></span></div></div>`))
+
+	infobox := cardcard.GetContent()
+	//fmt.Println("123", cardcard.Title)
+	// 添加自定义 CSS 代码
+	customCSS := `<style>
+        /* 这里是自定义的 CSS 代码 */
+        .info-box {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #beijing-time {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        #weather {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>`
+
+	// 添加自定义 JS 代码
+	customJS := `<script>
+        // 这里是自定义的 JS 代码
+         // 更新北京时间
+        function updateBeijingTime() {
+            const options = {
+                timeZone: 'Asia/Shanghai',
+                hour12: false,
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            const formatter = new Intl.DateTimeFormat('zh-CN', options);
+            const parts = formatter.formatToParts(new Date());
+            
+            let datePart = '', timePart = '';
+            parts.forEach(part => {
+                if (part.type === 'year' || part.type === 'month' || part.type === 'day') {
+                    datePart += part.value;
+                    if (part.type === 'year') datePart += '年';
+                    else if (part.type === 'month') datePart += '月';
+                    else if (part.type === 'day') datePart += '日';
+                } else if (part.type === 'hour' || part.type === 'minute' || part.type === 'second') {
+                    timePart += part.value;
+                    if (part.type === 'hour') timePart += ':';
+                    else if (part.type === 'minute') timePart += ':';
+                }
+            });
+        }
+    </script>`
+
+	// 将 CSS 和 JS 代码添加到页面内容中
+	contentWithCSSJS := template.HTML(customCSS) + infobox + template.HTML(customJS)
+	return tmp.Row().SetContent(contentWithCSSJS)
+	//label := tmp.Label()
+	//label1 := label.SetContent(smallbox.New().SetTitle("123").SetValue(template2.HTML(clientIP)).GetContent()).GetContent()
+	//return tmp.Row().SetContent(label1)
+	//<span style=" font-size:24px; ">%s</span>
 }
 
 func getRow1(tmp template.Template) types.RowAttribute {
@@ -156,11 +181,13 @@ func getRow1(tmp template.Template) types.RowAttribute {
 func getRow2(tmp template.Template) types.RowAttribute {
 	col := tmp.Col()
 	col1 := col.SetSize(types.SizeMD(6)).SetContent(smallbox.New().SetTitle("本月收入").SetUrl("/ks/info/financial_records").SetValue(service.Int64ToTmp(service.GetCurrentMonthIncome()) + " 元").SetColor("blue").SetIcon(icon.Money).GetContent()).GetContent()
-	col2 := col.SetSize(types.SizeMD(6)).SetContent(template.HTML(`<a href="https://www.baidu.com" target="_blank" rel="noopener">123</a>`) + smallbox.New().SetTitle("本月支出").SetUrl("/ks/info/financial_records").SetValue(service.Int64ToTmp(service.GetCurrentMonthExpense())+" 元").SetColor("blue").SetIcon(icon.Money).GetContent()).GetContent()
+	col2 := col.SetSize(types.SizeMD(6)).SetContent(smallbox.New().SetTitle("本月支出").SetUrl("/ks/info/financial_records").SetValue(service.Int64ToTmp(service.GetCurrentMonthExpense()) + " 元").SetColor("blue").SetIcon(icon.Money).GetContent()).GetContent()
 	return tmp.Row().SetContent(col1 + col2)
+	//template.HTML(`<a href="https://www.baidu.com" target="_blank" rel="noopener">123</a>`)
 }
 
 func getRow3(tmp template.Template) types.RowAttribute {
+	col := tmp.Col()
 	lineChart := chartjs.Line().
 		SetID("salechart").
 		SetHeight(200).
@@ -178,5 +205,40 @@ func getRow3(tmp template.Template) types.RowAttribute {
 		DSBorderColor("rgba(60,141,188,1)").
 		DSLineTension(0.1).
 		GetContent()
-	return tmp.Row().SetContent(lineChart)
+	col1 := col.SetSize(types.SizeMD(8)).SetContent(lineChart).GetContent()
+	pie := chartjs.Pie().
+		SetHeight(170).
+		SetLabels([]string{"一字螺丝刀", "换气扇", "杯子", "畚斗", "合页", "笔记本电脑"}).
+		SetID("pieChart").
+		AddDataSet("Chrome").
+		DSData([]float64{100, 300, 600, 400, 500, 700}).
+		DSBackgroundColor([]chartjs.Color{
+			"rgb(255, 205, 86)", "rgb(54, 162, 235)", "rgb(255, 99, 132)", "rgb(255, 205, 86)", "rgb(54, 162, 235)", "rgb(255, 99, 132)",
+		}).
+		GetContent()
+	col2 := col.SetSize(types.SizeMD(2)).SetContent(pie).GetContent()
+
+	legend := chart_legend.New().SetData([]map[string]string{
+		{
+			"label": " 一字螺丝刀",
+			"color": "red",
+		}, {
+			"label": " 换气扇",
+			"color": "Green",
+		}, {
+			"label": " 杯子",
+			"color": "yellow",
+		}, {
+			"label": " 畚斗",
+			"color": "blue",
+		}, {
+			"label": " 合页",
+			"color": "light-blue",
+		}, {
+			"label": " 笔记本电脑",
+			"color": "gray",
+		},
+	}).GetContent()
+	col3 := col.SetSize(types.SizeMD(2)).SetContent(legend).GetContent()
+	return tmp.Row().SetContent(col1 + col2 + col3)
 }

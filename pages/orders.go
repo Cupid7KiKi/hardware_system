@@ -37,6 +37,8 @@ func GetOrdersTable(ctx *context.Context) table.Table {
 			if value.Row["customers_companies_goadmin_join_name"] == nil {
 				return "未知客户"
 			}
+			fmt.Println(value.Row)
+			fmt.Println(value.Value)
 			return value.Row["customers_companies_goadmin_join_name"]
 		})
 	info.AddField("下单人", "name", db.Int).
@@ -58,6 +60,10 @@ func GetOrdersTable(ctx *context.Context) table.Table {
 		})
 	info.AddField("总计金额", "total_amount", db.Decimal).FieldDisplay(func(value types.FieldModel) interface{} {
 		//fmt.Println(reflect.TypeOf(service.GetTotalAmountFromOrderID(strconv.Itoa(int(value.Row["id"].(int64))))["SUM(amount)"]))
+		//fmt.Println(reflect.TypeOf(value.Value))
+		if value.Value == "0.00" {
+			return "0.00 元"
+		}
 		return service.GetTotalAmountFromOrderID(strconv.Itoa(int(value.Row["id"].(int64))))["SUM(amount)"].(string) + " 元"
 	})
 	info.AddField("订单状态", "status", db.Enum).FieldDisplay(func(model types.FieldModel) interface{} {
@@ -109,7 +115,7 @@ func GetOrdersTable(ctx *context.Context) table.Table {
 			cID := service.GetCompanyNameByContactName(cn)
 			fmt.Println(cID)
 			data = make(types.FieldOptions, len(cID))
-			data = service.TransSelectionOptions(cID, "name", "id")
+			data = service.TransSelectionOptions(cID, "company_name", "id")
 			return true, "ok", data
 		})
 	formList.AddField("客户名称", "customer_id", db.Int, form.SelectSingle).FieldOptions(service.TransFieldOptions(service.GetCompanies(), "name", "id"))
@@ -161,7 +167,7 @@ func GetOrdersTable(ctx *context.Context) table.Table {
 	formList.AddField("总计金额", "total_amount", db.Decimal, form.Custom).
 		FieldCustomContent(template.HTML(`
 		<span class="input-group-addon">¥</span>
-		<input type="text" name="total_amount" value="{{ .Value }}" style="width: 120px;text-align: right;" placeholder="总计金额" class="form-control total_amount">
+		<input type="text" name="total_amount" value="{{ .Value }}" style="width: 120px;text-align: right;" placeholder="总计金额" class="form-control total_amount" readonly>
 		`)).FieldCustomJs(template.JS(`
 		$(function () {
 	 			$('.total_amount').inputmask({
@@ -175,11 +181,10 @@ func GetOrdersTable(ctx *context.Context) table.Table {
 				   removeMaskOnSubmit: true
 	 			});
 	     });
-	 `)).FieldDefault("0.00").FieldHelpMsg("可以暂时填入一个数字")
+	 `)).FieldDefault("0.00").FieldHelpMsg("系统后续会自动计算")
 	formList.AddField("订单状态", "status", db.Enum, form.SelectSingle). // 单选的选项，text代表显示内容，value代表对应值
 										FieldOptions(types.FieldOptions{
 			{Text: "待定", Value: "pending"},
-			{Text: "批准", Value: "approved"},
 			{Text: "已发货", Value: "shipped"},
 			{Text: "完成", Value: "completed"},
 			{Text: "取消", Value: "canceled"},
@@ -190,6 +195,7 @@ func GetOrdersTable(ctx *context.Context) table.Table {
 		FieldDisplay(func(model types.FieldModel) interface{} {
 			return []string{model.Value}
 		})
+	//{Text: "批准", Value: "approved"},
 	formList.AddField("订单备注", "remark", db.Text, form.TextArea).FieldDefault("无").
 		FieldDisplay(func(value types.FieldModel) interface{} {
 			return "无"

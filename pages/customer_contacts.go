@@ -56,8 +56,8 @@ func GetCustomercontactsTable(ctx *context.Context) table.Table {
 			data = make(types.FieldOptions, len(contacts))
 			data = service.TransSelectionOptions(contacts, "name", "id")
 			return true, "ok", data
-		})
-	formList.AddField("联系人", "contact_id", db.Varchar, form.SelectSingle)
+		}).FieldMust()
+	formList.AddField("联系人", "contact_id", db.Varchar, form.SelectSingle).FieldMust()
 	formList.AddField("联系时间", "contact_time", db.Datetime, form.Datetime)
 	formList.AddField("具体内容", "content", db.Text, form.TextArea)
 	formList.AddField("后续联系日期", "next_followup", db.Date, form.Datetime)

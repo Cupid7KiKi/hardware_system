@@ -22,15 +22,6 @@ func GetOrderitemsTable(ctx *context.Context) table.Table {
 	info := orderItems.GetInfo().HideFilterArea()
 
 	info.AddField("ID", "id", db.Int)
-	//info.AddField("Custom", "name", db.Varchar).
-	//	FieldJoin(types.Join{
-	//		Table:     "companies_contacts",
-	//		Field:     "custom",
-	//		JoinField: "id",
-	//	}).FieldFilterable(types.FilterType{Operator: types.FilterOperatorLike}).
-	//	FieldDisplay(func(value types.FieldModel) interface{} {
-	//		return value.Row["companies_contacts_goadmin_join_name"]
-	//	})
 	info.AddField("订单编号", "id", db.Varchar).FieldJoin(types.Join{
 		Table:     "orders",
 		Field:     "order_id",

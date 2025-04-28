@@ -42,7 +42,7 @@ func startServer() {
 
 	r := gin.Default()
 
-	// 先注册自定义路由
+	// 注册自定义路由
 	routes.RegisterRoutes(r)
 
 	template.AddComp(chartjs.NewChart())

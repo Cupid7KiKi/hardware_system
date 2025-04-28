@@ -54,5 +54,9 @@ func GetTotalAmountFromOrderID(orderID string) map[string]interface{} {
 	}
 	// 将结果存入map
 	amount["SUM(amount)"] = values
+
+	//同时更新数据库
+	stmt := fmt.Sprintf("UPDATE orders\nSET total_amount = (\n    SELECT SUM(amount) \n    FROM order_items \n    WHERE order_id = '%s' \n)\nWHERE id = '%s';", orderID, orderID)
+	_, err = GetDb().Exec(stmt)
 	return amount
 }

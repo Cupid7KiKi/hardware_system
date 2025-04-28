@@ -45,23 +45,23 @@ func GetProductsTable(ctx *context.Context) table.Table {
 		if value.Value == "1" {
 			return "是"
 		} else {
-			return "No"
+			return "否"
 		}
 	})
 	info.AddField("创建时间", "created_at", db.Timestamp)
 
-	info.SetTable("products").SetTitle("产品管理").SetDescription("描述产品信息").
-		SetAction(template.HTML(`<a href="/ks/info/financial_records/new"><i class="fa fa-google">123</i></a>`))
+	info.SetTable("products").SetTitle("产品管理").SetDescription("描述产品信息")
+	//SetAction(template.HTML(`<a href="/ks/info/financial_records/new"><i class="fa fa-google">123</i></a>`))
 
 	formList := products.GetForm()
 	formList.AddField("ID", "id", db.Int, form.Default).
 		FieldDisableWhenCreate()
-	formList.AddField("产品编码", "product_code", db.Varchar, form.Text)
+	formList.AddField("产品编码", "product_code", db.Varchar, form.Text).FieldMust()
 	//.SetError(errors.PageError500, "")
-	formList.AddField("产品名称", "product_name", db.Varchar, form.Text)
+	formList.AddField("产品名称", "product_name", db.Varchar, form.Text).FieldMust()
 	formList.AddField("所属分类", "category_id", db.Int, form.SelectSingle).FieldOptions(service.TransFieldOptions(service.GetCategories(), "category_name", "id")).FieldMust()
 	formList.AddField("规格", "spec", db.Text, form.Text)
-	formList.AddField("单位", "unit", db.Varchar, form.Text)
+	formList.AddField("单位", "unit", db.Varchar, form.Text).FieldMust()
 	formList.AddField("品牌", "brand", db.Varchar, form.Text)
 	//formList.AddField("采购价", "purchase_price", db.Decimal, form.Custom).
 	//	FieldCustomContent(template.HTML(`
@@ -98,7 +98,7 @@ func GetProductsTable(ctx *context.Context) table.Table {
 	 			});
 	     	});
 		console.log("Hello test1!")
-	 `))
+	 `)).FieldMust()
 
 	// 添加一个自定义类型的表单字段
 	//formList.AddField("content", "content", db.Varchar, form.Custom).FieldCustomContent(template.HTML(`
